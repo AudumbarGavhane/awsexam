@@ -1,0 +1,12 @@
+Buisiness Entities 
+-----------------------------------
+users, 
+project,
+team,
+task. 
+-----------------------------------
+Buisiness Operations
+-----------------------------------
+Task Assignment and Tracking
+Project Creation and Management
+Team Collaboration and Communication

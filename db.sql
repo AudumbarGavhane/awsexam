@@ -6,8 +6,8 @@ CREATE TABLE Users (
   Email VARCHAR(255),
   Password VARCHAR(255),
   Role VARCHAR(50),
-  Project INT,
-  FOREIGN KEY (Project) REFERENCES Projects(ProjectID)
+  Project INT
+ 
 );
 
 
@@ -17,8 +17,8 @@ CREATE TABLE Projects (
   Description TEXT,
   StartDate DATE,
   EndDate DATE,
-  ProjectManagerID INT,
-  FOREIGN KEY (ProjectManagerID) REFERENCES Users(UserID)
+  ProjectManagerID INT
+ 
 );
 
 
@@ -29,9 +29,8 @@ CREATE TABLE Tasks (
   Description TEXT,
   DueDate DATE,
   Status VARCHAR(50),
-  AssigneeID INT,
-  FOREIGN KEY (ProjectID) REFERENCES Projects(ProjectID),
-  FOREIGN KEY (AssigneeID) REFERENCES Users(UserID)
+  AssigneeID INT
+  
 );
 
 
